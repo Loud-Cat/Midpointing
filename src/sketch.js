@@ -1,6 +1,6 @@
 
 var pointOne, pointTwo, pointThree, go, notice;
-var points = null; var mids = null;
+var points = null, mids = null;
 
 function setup() {
   let s = min(windowWidth, windowHeight);
