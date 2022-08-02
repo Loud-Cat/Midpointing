@@ -9,6 +9,7 @@ function setup() {
   pointOne = createInput();
   pointTwo = createInput();
   pointThree = createInput();
+
   go = createButton("GO");
   go.style("height", "30px");
   go.style("width", "10%");
@@ -16,7 +17,6 @@ function setup() {
   
   createElement("br");
   createP("Enter the midpoints as 'x y' and calculate the vertices.");
-
   notice = createP("Results will appear here.");
 }
 
@@ -33,6 +33,7 @@ function draw() {
     stroke(255);
     strokeWeight(6);
     fill(0);
+
     beginShape();
     for (let p of points) {
       let x = map(p[0], xmin, xmax, 25, width - 25);
