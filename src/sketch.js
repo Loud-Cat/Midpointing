@@ -5,8 +5,6 @@ var points = null; var mids = null;
 function setup() {
   let s = min(windowWidth, windowHeight);
   createCanvas(s, s);
-  angleMode(DEGREES);
-  rectMode(CENTER);
 
   pointOne = createInput();
   pointTwo = createInput();
